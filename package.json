@@ -1,0 +1,25 @@
+{
+  "name": "my-first-slackbot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon bot.js --exec babel-node",
+    "build": "babel bot.js -d dist",
+    "serve": "node dist/bot.js"
+  },
+  "dependencies": {
+    "botkit": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "nodemon": "^1.11.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  }
+}
